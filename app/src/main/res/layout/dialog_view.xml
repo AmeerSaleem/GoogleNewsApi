@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/curved_layout"
+    android:orientation="vertical">
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/dialogImage"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        app:sriv_left_top_corner_radius="10dp"
+        app:sriv_right_top_corner_radius="10dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dialogTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noirpro_light"
+                android:text="News Title"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dialogDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noirpro_light"
+                android:text="News Date"
+                android:textColor="#0066AA"
+                android:textSize="11dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dialogDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/noirpro_light"
+                android:text="News Description"
+                android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dialogLink2Url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:fontFamily="@font/noirpro_light"
+                android:text="View full story"
+                android:textSize="12dp"
+                android:textColor="#0066AA" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

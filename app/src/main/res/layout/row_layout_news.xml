@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newsCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:background="@drawable/curved_layout"
+    android:elevation="5dp"
+    android:orientation="horizontal">
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/newsImage"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        app:sriv_left_bottom_corner_radius="10dp"
+        app:sriv_left_top_corner_radius="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/newsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:fontFamily="@font/noirpro_light"
+            app:fontFamily="@font/noirpro_light"
+            android:text="Story headline"
+            android:visibility="gone"
+            android:textColor="#797979"
+            android:textSize="13dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/newsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:visibility="gone"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/noirpro_light"
+            android:text="story Date"
+            android:textColor="#B9B9B9"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
